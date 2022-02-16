@@ -1,0 +1,13 @@
+--cpu=Cortex-M4.fp.sp
+"02_external_interrupt\startup_stm32f407xx.o"
+"02_external_interrupt\main.o"
+"02_external_interrupt\stm32f4xx_it.o"
+"02_external_interrupt\stm32f4xx_ll_gpio.o"
+"02_external_interrupt\stm32f4xx_ll_rcc.o"
+"02_external_interrupt\stm32f4xx_ll_utils.o"
+"02_external_interrupt\stm32f4xx_ll_exti.o"
+"02_external_interrupt\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter "02_External_Interrupt\02_External_Interrupt.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "02_External_Interrupt.map" -o 02_External_Interrupt\02_External_Interrupt.axf
